@@ -1,0 +1,51 @@
+﻿@page
+@model Vote_Manager.Pages.Voter.CreateModel
+@{
+}
+
+<br>
+<h1>New Voter</h1>
+<br>
+
+@if(@Model.errorMessage.Length>0)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>@Model.errorMessage</strong>
+        <botton type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></botton>
+    </div>
+}
+
+<form method="post"> 
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Voter's Name</label> 
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="name" value="@Model.votersInfo.Voter_Name" autocomplete="off">
+        </div>
+    </div>
+       
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Voter's District</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="district" value="@Model.votersInfo.Voter_District" autocomplete="off">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Voter's States</label> 
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="state" value="@Model.votersInfo.Voter_State" autocomplete="off">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <input type="submit" class="btn btn-primary">
+        </div>
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-danger" href="/" role="button">Cancel</a>
+        </div>
+    </div>
+</form>
+

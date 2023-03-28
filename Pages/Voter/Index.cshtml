@@ -1,0 +1,121 @@
+﻿@page
+@model Vote_Manager.Pages.Voter.IndexModel
+@{
+    //C# code 
+}
+
+<br>
+<h1>Voter's Information</h1>
+<br>
+
+<a class="btn btn-outline-success btn-md" href="/Voter/Create">➕</a> &nbsp&nbsp&nbsp&nbsp
+<a class="btn btn-outline-success btn-md" href="/Voter/Search">🔍</a> &nbsp&nbsp&nbsp&nbsp
+<a class="btn btn-outline-success btn-md" href="/Voter/ShowAll">Show All</a>
+
+<br>
+<br>
+
+<table class="table">
+    <tr>
+        <th>Voter Name</th>
+        <th>Voter District</th>
+        <th>Voter State</th>
+    </tr>
+
+    @foreach(var item in Model.listVoters)
+    {
+        <tr>
+            <td>@item.Voter_Name</td>
+            <td>@item.Voter_District</td>
+            <td>@item.Voter_State</td>
+
+            
+            <td>
+                <!-- Edit Modal Begins Here -->
+
+                <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#editModal-@item.Voter_Id">
+                    ✏️
+                </button>
+
+                <div class="modal fade" id="editModal-@item.Voter_Id" tabindex="-1" aria-labelledby="editModalLabel-@item.Voter_Id" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="editModalLabel-@item.Voter_Id">Update Voter</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form method="post">
+                                    <input type="hidden" name="id" value="@item.Voter_Id">
+
+                                    <div class="row mb-3">
+                                        <label class="col-sm-3 col-form-label">Name</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" name="name" value="@item.Voter_Name" autocomplete="off">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <label class="col-sm-3 col-form-label">District</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" name="district" value="@item.Voter_District" autocomplete="off">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <label class="col-sm-3 col-form-label">State</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" name="state" value="@item.Voter_State" autocomplete="off">
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-outline-info">✏️</button>
+                                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*<a class="btn btn-outline-danger btn-sm" href="/Voter/Edit?id=@item.Voter_Id">✏️</a>*@
+
+
+
+
+
+                <!-- Delete Modal Begins Here -->
+
+                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteModal-@item.Voter_Id">
+                    🗑️
+                </button>
+
+                <div class="modal fade" id="deleteModal-@item.Voter_Id" tabindex="-1" aria-labelledby="deleteModalLabel-@item.Voter_Id" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="deleteModalLabel-@item.Voter_Id">Delete Voter</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            @*Copied the form from delete page and pasted into modal-body*@
+                            <div class="modal-body">
+                                <p>Sure, you want to delete it?</p>
+                                <form method="post" asp-page-handler="Delete">
+                                    <input type="hidden" name="id" value="@item.Voter_Id">
+                                    
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-outline-info">🗑️</button>
+                                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*<a class="btn btn-outline-danger btn-sm" href="/Voter/Delete?id=@item.Voter_Id">🗑️</a>*@
+            </td>
+        </tr>
+    }
+
+</table>

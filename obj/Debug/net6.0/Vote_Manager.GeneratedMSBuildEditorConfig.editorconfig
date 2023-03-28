@@ -1,0 +1,69 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Vote_Manager
+build_property.RootNamespace = Vote_Manager
+build_property.ProjectDir = C:\Users\91797\Desktop\Visual Studio Projects\Vote_Manager\Vote_Manager\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\91797\Desktop\Visual Studio Projects\Vote_Manager\Vote_Manager
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/91797/Desktop/Visual Studio Projects/Vote_Manager/Vote_Manager/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/91797/Desktop/Visual Studio Projects/Vote_Manager/Vote_Manager/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/91797/Desktop/Visual Studio Projects/Vote_Manager/Vote_Manager/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/91797/Desktop/Visual Studio Projects/Vote_Manager/Vote_Manager/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/91797/Desktop/Visual Studio Projects/Vote_Manager/Vote_Manager/Pages/Voter/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm90ZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/91797/Desktop/Visual Studio Projects/Vote_Manager/Vote_Manager/Pages/Voter/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm90ZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/91797/Desktop/Visual Studio Projects/Vote_Manager/Vote_Manager/Pages/Voter/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm90ZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/91797/Desktop/Visual Studio Projects/Vote_Manager/Vote_Manager/Pages/Voter/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm90ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/91797/Desktop/Visual Studio Projects/Vote_Manager/Vote_Manager/Pages/Voter/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm90ZXJcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/91797/Desktop/Visual Studio Projects/Vote_Manager/Vote_Manager/Pages/Voter/ShowAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm90ZXJcU2hvd0FsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/91797/Desktop/Visual Studio Projects/Vote_Manager/Vote_Manager/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/91797/Desktop/Visual Studio Projects/Vote_Manager/Vote_Manager/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/91797/Desktop/Visual Studio Projects/Vote_Manager/Vote_Manager/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-e170mnhi74
